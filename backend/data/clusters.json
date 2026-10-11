@@ -1,0 +1,22 @@
+{
+    "Favorita_Forte": {
+        "total": 3617,
+        "wins": 2476,
+        "hit_rate": 68.45
+    },
+    "Favorita_Moderata": {
+        "total": 6871,
+        "wins": 3689,
+        "hit_rate": 53.69
+    },
+    "Equilibrata": {
+        "total": 10088,
+        "wins": 4291,
+        "hit_rate": 42.54
+    },
+    "Sfavorita": {
+        "total": 3219,
+        "wins": 1251,
+        "hit_rate": 38.86
+    }
+}

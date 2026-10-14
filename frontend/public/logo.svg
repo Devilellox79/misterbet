@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Cilindro (Coppa del cilindro) -->
+  <rect x="30" y="20" width="40" height="45" fill="#1E293B" rx="2" />
+  <!-- Tesa del cilindro -->
+  <rect x="20" y="60" width="60" height="8" fill="#0F172A" rx="4" />
+  <!-- Fascia elegante sul cilindro -->
+  <rect x="30" y="55" width="40" height="5" fill="#10B981" />
+  <!-- Baffi stilizzati -->
+  <path d="M 50 75 Q 65 70 75 80 Q 65 85 50 80 Q 35 85 25 80 Q 35 70 50 75 Z" fill="#F59E0B" />
+  <!-- Dettaglio luce sul cilindro -->
+  <rect x="35" y="25" width="5" height="35" fill="#334155" rx="2" />
+</svg>

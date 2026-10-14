@@ -1,0 +1,1069 @@
+[
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Frosinone",
+        "away_team": "Sassuolo",
+        "commence_time": "2026-10-16T18:45:00Z",
+        "odds": {
+            "1": 2.61,
+            "X": 3.62,
+            "2": 2.67
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Venezia",
+        "away_team": "Napoli",
+        "commence_time": "2026-10-17T13:00:00Z",
+        "odds": {
+            "1": 4.68,
+            "X": 4.22,
+            "2": 1.71
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Bologna",
+        "away_team": "Inter Milan",
+        "commence_time": "2026-10-17T16:00:00Z",
+        "odds": {
+            "1": 5.93,
+            "X": 4.08,
+            "2": 1.6
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "AS Roma",
+        "away_team": "Genoa",
+        "commence_time": "2026-10-17T18:45:00Z",
+        "odds": {
+            "1": 1.4,
+            "X": 5.11,
+            "2": 7.78
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Udinese",
+        "away_team": "Lecce",
+        "commence_time": "2026-10-18T10:30:00Z",
+        "odds": {
+            "1": 1.91,
+            "X": 3.59,
+            "2": 4.31
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Fiorentina",
+        "away_team": "Como",
+        "commence_time": "2026-10-18T13:00:00Z",
+        "odds": {
+            "1": 3.47,
+            "X": 3.79,
+            "2": 2.07
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "AC Milan",
+        "away_team": "Atalanta BC",
+        "commence_time": "2026-10-18T16:00:00Z",
+        "odds": {
+            "1": 1.86,
+            "X": 3.77,
+            "2": 4.31
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Juventus",
+        "away_team": "Lazio",
+        "commence_time": "2026-10-18T18:45:00Z",
+        "odds": {
+            "1": 1.68,
+            "X": 3.93,
+            "2": 5.34
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Monza",
+        "away_team": "Cagliari",
+        "commence_time": "2026-10-19T16:30:00Z",
+        "odds": {
+            "1": 2.41,
+            "X": 3.23,
+            "2": 3.23
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Parma",
+        "away_team": "Torino",
+        "commence_time": "2026-10-19T18:45:00Z",
+        "odds": {
+            "1": 3.18,
+            "X": 3.03,
+            "2": 2.57
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Torino",
+        "away_team": "Monza",
+        "commence_time": "2026-10-23T18:45:00Z",
+        "odds": {
+            "1": 2.15,
+            "X": 3.5,
+            "2": 3.34
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Cagliari",
+        "away_team": "Bologna",
+        "commence_time": "2026-10-24T13:00:00Z",
+        "odds": {
+            "1": 3.29,
+            "X": 2.95,
+            "2": 2.46
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Como",
+        "away_team": "Sassuolo",
+        "commence_time": "2026-10-24T13:00:00Z",
+        "odds": {
+            "1": 1.43,
+            "X": 4.55,
+            "2": 7.26
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Napoli",
+        "away_team": "AS Roma",
+        "commence_time": "2026-10-24T16:00:00Z",
+        "odds": {
+            "1": 2.91,
+            "X": 3.52,
+            "2": 2.37
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Lazio",
+        "away_team": "Parma",
+        "commence_time": "2026-10-24T18:45:00Z",
+        "odds": {
+            "1": 1.52,
+            "X": 4.12,
+            "2": 6.43
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Inter Milan",
+        "away_team": "Fiorentina",
+        "commence_time": "2026-10-25T11:30:00Z",
+        "odds": {
+            "1": 1.36,
+            "X": 5.37,
+            "2": 7.25
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Atalanta BC",
+        "away_team": "Frosinone",
+        "commence_time": "2026-10-25T14:00:00Z",
+        "odds": {
+            "1": 1.62,
+            "X": 4.18,
+            "2": 4.98
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Genoa",
+        "away_team": "Venezia",
+        "commence_time": "2026-10-25T14:00:00Z",
+        "odds": {
+            "1": 2.14,
+            "X": 3.19,
+            "2": 3.71
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Lecce",
+        "away_team": "Juventus",
+        "commence_time": "2026-10-25T17:00:00Z",
+        "odds": {
+            "1": 7.92,
+            "X": 4.23,
+            "2": 1.44
+        }
+    },
+    {
+        "league": "soccer_italy_serie_a",
+        "home_team": "Udinese",
+        "away_team": "AC Milan",
+        "commence_time": "2026-10-25T19:45:00Z",
+        "odds": {
+            "1": 4.36,
+            "X": 3.68,
+            "2": 1.81
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Everton",
+        "away_team": "Chelsea",
+        "commence_time": "2026-10-17T11:30:00Z",
+        "odds": {
+            "1": 2.95,
+            "X": 3.65,
+            "2": 2.1
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Brentford",
+        "away_team": "Liverpool",
+        "commence_time": "2026-10-17T14:00:00Z",
+        "odds": {
+            "1": 2.3,
+            "X": 3.6,
+            "2": 2.7
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Fulham",
+        "away_team": "Hull City",
+        "commence_time": "2026-10-17T14:00:00Z",
+        "odds": {
+            "1": 1.67,
+            "X": 3.8,
+            "2": 4.75
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Manchester City",
+        "away_team": "Ipswich Town",
+        "commence_time": "2026-10-17T14:00:00Z",
+        "odds": {
+            "1": 1.22,
+            "X": 6.5,
+            "2": 10.0
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Newcastle United",
+        "away_team": "Aston Villa",
+        "commence_time": "2026-10-17T16:30:00Z",
+        "odds": {
+            "1": 2.15,
+            "X": 3.5,
+            "2": 3.0
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Bournemouth",
+        "away_team": "Sunderland",
+        "commence_time": "2026-10-18T13:00:00Z",
+        "odds": {
+            "1": 2.0,
+            "X": 3.5,
+            "2": 3.4
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Brighton and Hove Albion",
+        "away_team": "Crystal Palace",
+        "commence_time": "2026-10-18T13:00:00Z",
+        "odds": {
+            "1": 1.57,
+            "X": 4.2,
+            "2": 5.0
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Leeds United",
+        "away_team": "Manchester United",
+        "commence_time": "2026-10-18T13:00:00Z",
+        "odds": {
+            "1": 2.25,
+            "X": 3.6,
+            "2": 2.7
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Nottingham Forest",
+        "away_team": "Arsenal",
+        "commence_time": "2026-10-18T15:30:00Z",
+        "odds": {
+            "1": 5.6,
+            "X": 3.9,
+            "2": 1.55
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Tottenham Hotspur",
+        "away_team": "Coventry City",
+        "commence_time": "2026-10-19T19:00:00Z",
+        "odds": {
+            "1": 1.5,
+            "X": 4.6,
+            "2": 6.3
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Ipswich Town",
+        "away_team": "Nottingham Forest",
+        "commence_time": "2026-10-23T19:00:00Z",
+        "odds": {
+            "1": 2.95,
+            "X": 3.4,
+            "2": 2.24
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Aston Villa",
+        "away_team": "Manchester City",
+        "commence_time": "2026-10-24T11:30:00Z",
+        "odds": {
+            "1": 4.4,
+            "X": 4.1,
+            "2": 1.62
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Arsenal",
+        "away_team": "Everton",
+        "commence_time": "2026-10-24T14:00:00Z",
+        "odds": {
+            "1": 1.34,
+            "X": 4.9,
+            "2": 7.25
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Coventry City",
+        "away_team": "Fulham",
+        "commence_time": "2026-10-24T14:00:00Z",
+        "odds": {
+            "1": 2.75,
+            "X": 3.55,
+            "2": 2.25
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Chelsea",
+        "away_team": "Tottenham Hotspur",
+        "commence_time": "2026-10-24T16:30:00Z",
+        "odds": {
+            "1": 1.9,
+            "X": 4.11,
+            "2": 4.06
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Manchester United",
+        "away_team": "Bournemouth",
+        "commence_time": "2026-10-25T14:00:00Z",
+        "odds": {
+            "1": 1.86,
+            "X": 4.26,
+            "2": 4.11
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Hull City",
+        "away_team": "Brentford",
+        "commence_time": "2026-10-25T14:00:00Z",
+        "odds": {
+            "1": 4.2,
+            "X": 3.9,
+            "2": 1.68
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Liverpool",
+        "away_team": "Brighton and Hove Albion",
+        "commence_time": "2026-10-25T14:00:00Z",
+        "odds": {
+            "1": 2.0,
+            "X": 3.7,
+            "2": 3.2
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Crystal Palace",
+        "away_team": "Newcastle United",
+        "commence_time": "2026-10-25T14:00:00Z",
+        "odds": {
+            "1": 2.59,
+            "X": 3.46,
+            "2": 2.46
+        }
+    },
+    {
+        "league": "soccer_epl",
+        "home_team": "Sunderland",
+        "away_team": "Leeds United",
+        "commence_time": "2026-10-25T16:30:00Z",
+        "odds": {
+            "1": 2.62,
+            "X": 3.2,
+            "2": 2.5
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Deportivo La Coruña",
+        "away_team": "Levante",
+        "commence_time": "2026-10-16T19:00:00Z",
+        "odds": {
+            "1": 2.12,
+            "X": 3.52,
+            "2": 3.61
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Espanyol",
+        "away_team": "Atlético Madrid",
+        "commence_time": "2026-10-17T12:00:00Z",
+        "odds": {
+            "1": 4.65,
+            "X": 3.89,
+            "2": 1.78
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Villarreal",
+        "away_team": "Elche CF",
+        "commence_time": "2026-10-17T14:15:00Z",
+        "odds": {
+            "1": 1.45,
+            "X": 5.08,
+            "2": 6.61
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Real Betis",
+        "away_team": "Barcelona",
+        "commence_time": "2026-10-17T16:30:00Z",
+        "odds": {
+            "1": 6.14,
+            "X": 5.66,
+            "2": 1.43
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Valencia",
+        "away_team": "Athletic Bilbao",
+        "commence_time": "2026-10-17T19:00:00Z",
+        "odds": {
+            "1": 3.4,
+            "X": 3.39,
+            "2": 2.25
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "CA Osasuna",
+        "away_team": "Real Racing Club de Santander",
+        "commence_time": "2026-10-18T12:00:00Z",
+        "odds": {
+            "1": 2.03,
+            "X": 3.61,
+            "2": 3.77
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Celta Vigo",
+        "away_team": "Alavés",
+        "commence_time": "2026-10-18T14:15:00Z",
+        "odds": {
+            "1": 2.18,
+            "X": 3.27,
+            "2": 3.72
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Málaga",
+        "away_team": "Real Sociedad",
+        "commence_time": "2026-10-18T16:30:00Z",
+        "odds": {
+            "1": 3.4,
+            "X": 3.56,
+            "2": 2.18
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Real Madrid",
+        "away_team": "Sevilla",
+        "commence_time": "2026-10-18T19:00:00Z",
+        "odds": {
+            "1": 1.25,
+            "X": 6.59,
+            "2": 10.73
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Getafe",
+        "away_team": "Rayo Vallecano",
+        "commence_time": "2026-10-19T19:00:00Z",
+        "odds": {
+            "1": 2.96,
+            "X": 2.97,
+            "2": 2.79
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Levante",
+        "away_team": "Athletic Bilbao",
+        "commence_time": "2026-10-21T18:00:00Z",
+        "odds": {
+            "1": 3.4,
+            "X": 3.3,
+            "2": 2.05
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Alavés",
+        "away_team": "Málaga",
+        "commence_time": "2026-10-23T19:00:00Z",
+        "odds": {
+            "1": 1.8,
+            "X": 3.5,
+            "2": 4.0
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Rayo Vallecano",
+        "away_team": "Elche CF",
+        "commence_time": "2026-10-24T12:00:00Z",
+        "odds": {
+            "1": 1.74,
+            "X": 3.75,
+            "2": 4.1
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Real Racing Club de Santander",
+        "away_team": "Espanyol",
+        "commence_time": "2026-10-24T14:15:00Z",
+        "odds": {
+            "1": 2.25,
+            "X": 3.6,
+            "2": 2.7
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Valencia",
+        "away_team": "Villarreal",
+        "commence_time": "2026-10-24T16:30:00Z",
+        "odds": {
+            "1": 3.05,
+            "X": 3.6,
+            "2": 2.05
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Atlético Madrid",
+        "away_team": "Deportivo La Coruña",
+        "commence_time": "2026-10-24T19:00:00Z",
+        "odds": {
+            "1": 1.21,
+            "X": 6.25,
+            "2": 9.5
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Athletic Bilbao",
+        "away_team": "Getafe",
+        "commence_time": "2026-10-25T13:00:00Z",
+        "odds": {
+            "1": 1.6,
+            "X": 3.8,
+            "2": 5.1
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Celta Vigo",
+        "away_team": "Real Betis",
+        "commence_time": "2026-10-25T15:15:00Z",
+        "odds": {
+            "1": 2.6,
+            "X": 3.4,
+            "2": 2.4
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Real Sociedad",
+        "away_team": "Levante",
+        "commence_time": "2026-10-25T17:30:00Z",
+        "odds": {
+            "1": 1.76,
+            "X": 4.26,
+            "2": 4.72
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Barcelona",
+        "away_team": "Real Madrid",
+        "commence_time": "2026-10-25T20:00:00Z",
+        "odds": {
+            "1": 1.61,
+            "X": 5.03,
+            "2": 5.08
+        }
+    },
+    {
+        "league": "soccer_spain_la_liga",
+        "home_team": "Sevilla",
+        "away_team": "CA Osasuna",
+        "commence_time": "2026-10-26T20:00:00Z",
+        "odds": {
+            "1": 1.8,
+            "X": 3.2,
+            "2": 3.8
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "Eintracht Frankfurt",
+        "away_team": "1. FC Köln",
+        "commence_time": "2026-10-16T18:30:00Z",
+        "odds": {
+            "1": 1.99,
+            "X": 4.07,
+            "2": 3.49
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "Elversberg",
+        "away_team": "Augsburg",
+        "commence_time": "2026-10-17T13:30:00Z",
+        "odds": {
+            "1": 2.53,
+            "X": 3.77,
+            "2": 2.69
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "Union Berlin",
+        "away_team": "Borussia Dortmund",
+        "commence_time": "2026-10-17T13:30:00Z",
+        "odds": {
+            "1": 4.99,
+            "X": 4.48,
+            "2": 1.63
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "FC Schalke 04",
+        "away_team": "FSV Mainz 05",
+        "commence_time": "2026-10-17T13:30:00Z",
+        "odds": {
+            "1": 3.15,
+            "X": 3.61,
+            "2": 2.28
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "Hamburger SV",
+        "away_team": "VfB Stuttgart",
+        "commence_time": "2026-10-17T13:30:00Z",
+        "odds": {
+            "1": 4.33,
+            "X": 4.06,
+            "2": 1.79
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "Werder Bremen",
+        "away_team": "SC Paderborn",
+        "commence_time": "2026-10-17T13:30:00Z",
+        "odds": {
+            "1": 1.77,
+            "X": 4.3,
+            "2": 4.18
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "Bayern Munich",
+        "away_team": "RB Leipzig",
+        "commence_time": "2026-10-17T16:30:00Z",
+        "odds": {
+            "1": 1.23,
+            "X": 8.09,
+            "2": 10.0
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "Bayer Leverkusen",
+        "away_team": "SC Freiburg",
+        "commence_time": "2026-10-18T13:30:00Z",
+        "odds": {
+            "1": 1.76,
+            "X": 4.32,
+            "2": 4.21
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "Borussia Monchengladbach",
+        "away_team": "TSG Hoffenheim",
+        "commence_time": "2026-10-18T15:30:00Z",
+        "odds": {
+            "1": 3.07,
+            "X": 4.18,
+            "2": 2.13
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "VfB Stuttgart",
+        "away_team": "Borussia Monchengladbach",
+        "commence_time": "2026-10-23T18:30:00Z",
+        "odds": {
+            "1": 1.41,
+            "X": 5.46,
+            "2": 6.12
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "1. FC Köln",
+        "away_team": "FC Schalke 04",
+        "commence_time": "2026-10-24T13:30:00Z",
+        "odds": {
+            "1": 2.0,
+            "X": 3.96,
+            "2": 3.34
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "Augsburg",
+        "away_team": "Union Berlin",
+        "commence_time": "2026-10-24T13:30:00Z",
+        "odds": {
+            "1": 1.85,
+            "X": 3.95,
+            "2": 3.84
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "RB Leipzig",
+        "away_team": "Elversberg",
+        "commence_time": "2026-10-24T13:30:00Z",
+        "odds": {
+            "1": 1.33,
+            "X": 5.54,
+            "2": 7.94
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "FSV Mainz 05",
+        "away_team": "Werder Bremen",
+        "commence_time": "2026-10-24T13:30:00Z",
+        "odds": {
+            "1": 1.67,
+            "X": 4.23,
+            "2": 4.59
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "SC Paderborn",
+        "away_team": "Hamburger SV",
+        "commence_time": "2026-10-24T13:30:00Z",
+        "odds": {
+            "1": 2.4,
+            "X": 3.63,
+            "2": 2.8
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "Borussia Dortmund",
+        "away_team": "Eintracht Frankfurt",
+        "commence_time": "2026-10-24T16:30:00Z",
+        "odds": {
+            "1": 1.45,
+            "X": 5.15,
+            "2": 5.76
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "TSG Hoffenheim",
+        "away_team": "Bayer Leverkusen",
+        "commence_time": "2026-10-25T14:30:00Z",
+        "odds": {
+            "1": 2.68,
+            "X": 3.96,
+            "2": 2.36
+        }
+    },
+    {
+        "league": "soccer_germany_bundesliga",
+        "home_team": "SC Freiburg",
+        "away_team": "Bayern Munich",
+        "commence_time": "2026-10-25T16:30:00Z",
+        "odds": {
+            "1": 6.53,
+            "X": 5.94,
+            "2": 1.36
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Le Mans FC",
+        "away_team": "Toulouse",
+        "commence_time": "2026-10-16T18:45:00Z",
+        "odds": {
+            "1": 3.05,
+            "X": 3.57,
+            "2": 2.35
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Strasbourg",
+        "away_team": "Paris Saint Germain",
+        "commence_time": "2026-10-17T15:15:00Z",
+        "odds": {
+            "1": 6.31,
+            "X": 5.47,
+            "2": 1.43
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Lille",
+        "away_team": "Brest",
+        "commence_time": "2026-10-17T18:45:00Z",
+        "odds": {
+            "1": 1.83,
+            "X": 3.97,
+            "2": 4.19
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Troyes",
+        "away_team": "RC Lens",
+        "commence_time": "2026-10-17T18:45:00Z",
+        "odds": {
+            "1": 4.06,
+            "X": 4.04,
+            "2": 1.85
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Angers",
+        "away_team": "Marseille",
+        "commence_time": "2026-10-18T13:00:00Z",
+        "odds": {
+            "1": 3.39,
+            "X": 3.8,
+            "2": 2.1
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Lorient",
+        "away_team": "AS Monaco",
+        "commence_time": "2026-10-18T15:15:00Z",
+        "odds": {
+            "1": 3.9,
+            "X": 3.39,
+            "2": 2.07
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Le Havre",
+        "away_team": "Auxerre",
+        "commence_time": "2026-10-18T15:15:00Z",
+        "odds": {
+            "1": 2.36,
+            "X": 3.43,
+            "2": 3.14
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Paris FC",
+        "away_team": "Rennes",
+        "commence_time": "2026-10-18T15:15:00Z",
+        "odds": {
+            "1": 2.33,
+            "X": 3.27,
+            "2": 3.35
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Lyon",
+        "away_team": "Nice",
+        "commence_time": "2026-10-18T18:45:00Z",
+        "odds": {
+            "1": 1.69,
+            "X": 4.21,
+            "2": 4.83
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Brest",
+        "away_team": "Nice",
+        "commence_time": "2026-10-23T18:45:00Z",
+        "odds": {
+            "1": 2.2,
+            "X": 3.2,
+            "2": 3.3
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Toulouse",
+        "away_team": "Troyes",
+        "commence_time": "2026-10-24T15:15:00Z",
+        "odds": {
+            "1": 1.6,
+            "X": 3.7,
+            "2": 3.85
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "RC Lens",
+        "away_team": "Paris FC",
+        "commence_time": "2026-10-24T18:45:00Z",
+        "odds": {
+            "1": 2.0,
+            "X": 3.7,
+            "2": 3.05
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "AS Monaco",
+        "away_team": "Lille",
+        "commence_time": "2026-10-25T14:00:00Z",
+        "odds": {
+            "1": 1.92,
+            "X": 3.3,
+            "2": 3.0
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Angers",
+        "away_team": "Lorient",
+        "commence_time": "2026-10-25T16:15:00Z",
+        "odds": {
+            "1": 2.69,
+            "X": 3.4,
+            "2": 2.85
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Auxerre",
+        "away_team": "Le Mans FC",
+        "commence_time": "2026-10-25T16:15:00Z",
+        "odds": {
+            "1": 2.05,
+            "X": 3.5,
+            "2": 3.1
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Marseille",
+        "away_team": "Le Havre",
+        "commence_time": "2026-10-25T16:15:00Z",
+        "odds": {
+            "1": 1.56,
+            "X": 4.2,
+            "2": 4.6
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Rennes",
+        "away_team": "Strasbourg",
+        "commence_time": "2026-10-25T16:15:00Z",
+        "odds": {
+            "1": 1.54,
+            "X": 4.0,
+            "2": 3.85
+        }
+    },
+    {
+        "league": "soccer_france_ligue_one",
+        "home_team": "Paris Saint Germain",
+        "away_team": "Lyon",
+        "commence_time": "2026-10-25T19:45:00Z",
+        "odds": {
+            "1": 1.35,
+            "X": 5.7,
+            "2": 6.5
+        }
+    }
+]

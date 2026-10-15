@@ -1,12 +1,13 @@
 // MisterBet - Motore Frontend
 // Questo script legge i dati, calcola i colori dei semafori e disegna le card.
 
-   // Registra il Service Worker per abilitare l'installazione PWA
-   if ('serviceWorker' in navigator) {
-       navigator.serviceWorker.register('/sw.js')
-           .then(() => console.log('Service Worker registrato con successo'));
-   }
-   
+// === 1. REGISTRA SERVICE WORKER (per PWA) ===
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+        .then(() => console.log('Service Worker registrato con successo'));
+}
+
+// === 2. CARICA E DISEGNA LE PARTITE ===
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Scarica i dati dal file JSON
     fetch('app_data.json')
@@ -43,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 });
 
-// Funzione che crea l'HTML di una singola card
+// === 3. FUNZIONE CHE CREA L'HTML DI UNA CARD ===
 function createCardHTML(match) {
     // Logica del Semaforo: Verde se il gap è alto (>= 5%), Giallo se moderato
     let trafficColor = 'bg-mrGreen';
@@ -127,7 +128,10 @@ function createCardHTML(match) {
             </div>
         </div>
     </div>
-    // === PULSANTE "TORNA SU" ===
+    `;
+}
+
+// === 4. PULSANTE "TORNA SU" (NUOVO - ALLA FINE DEL FILE) ===
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
 // Mostra/nasconde il pulsante in base allo scroll
@@ -150,5 +154,3 @@ scrollToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-    `;
-}

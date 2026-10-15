@@ -1,0 +1,54 @@
+name: MisterBet Daily Update
+
+# Quando eseguire questo script: ogni giorno alle 08:00 (ora di Londra, che sono le 09:00 o 10:00 in Italia a seconda dell'ora legale)
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  # Permette anche di lanciarlo manualmente da GitHub se vuoi forzare un aggiornamento
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest # Il robot userà un server Linux
+    
+    steps:
+      # 1. Scarica il codice del progetto
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 2. Installa Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      # 3. Installa le librerie necessarie (pandas, requests, ecc.)
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+
+      # 4. Esegui lo script per scaricare le quote live
+      - name: Fetch Live Odds
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }} # La tua chiave segreta
+        run: python backend/services/fetch_live_odds.py
+
+      # 5. Esegui il Master Orchestrator per calcolare i pronostici
+      - name: Generate App Data
+        run: python backend/services/generate_app_data.py
+
+      # 6. Copia il file finale nella cartella frontend
+      - name: Copy data to frontend
+        run: cp backend/data/app_data.json frontend/app_data.json
+
+      # 7. Salva le modifiche su GitHub (così Netlify si aggiorna)
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'MisterBet Bot'
+          git config --global user.email 'bot@misterbet.com'
+          git add frontend/app_data.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Aggiornamento automatico dati giornaliero"
+          git push

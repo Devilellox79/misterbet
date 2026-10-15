@@ -1,6 +1,12 @@
 // MisterBet - Motore Frontend
 // Questo script legge i dati, calcola i colori dei semafori e disegna le card.
 
+   // Registra il Service Worker per abilitare l'installazione PWA
+   if ('serviceWorker' in navigator) {
+       navigator.serviceWorker.register('/sw.js')
+           .then(() => console.log('Service Worker registrato con successo'));
+   }
+   
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Scarica i dati dal file JSON
     fetch('app_data.json')

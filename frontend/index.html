@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag per PWA completa (iOS e Android) -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="MisterBet">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="MisterBet">
+    <meta name="description" content="MisterBet - Analisi statistica e comparazioni affini per scommesse calcistiche razionali.">
     <title>MisterBet - Scommesse Intelligenti</title>
     
     <!-- Collegamento per PWA (Icone e Manifest) -->
@@ -114,5 +121,15 @@
     <!-- IL NOSTRO CERVELLO JAVASCRIPT -->
     <script src="app.js"></script>
 
+    <!-- DISCLAIMER LEGALE -->
+    <div class="fixed bottom-0 left-0 right-0 bg-gray-900/95 backdrop-blur-md border-t border-gray-800 p-3 z-50">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-[10px] text-gray-500 leading-tight">
+                ⚠️ Il gioco è vietato ai minori di 18 anni e può causare dipendenza patologica. 
+                MisterBet fornisce solo analisi statistiche a scopo informativo. 
+                Gioca sempre in modo responsabile e consapevole.
+            </p>
+        </div>
+    </div>
 </body>
 </html>

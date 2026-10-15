@@ -127,5 +127,28 @@ function createCardHTML(match) {
             </div>
         </div>
     </div>
+    // === PULSANTE "TORNA SU" ===
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+// Mostra/nasconde il pulsante in base allo scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        // L'utente ha scrollato più di 300px: mostra il pulsante
+        scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+        scrollToTopBtn.classList.add('opacity-100', 'visible');
+    } else {
+        // L'utente è in cima: nascondi il pulsante
+        scrollToTopBtn.classList.add('opacity-0', 'invisible');
+        scrollToTopBtn.classList.remove('opacity-100', 'visible');
+    }
+});
+
+// Quando clicca, torna su con animazione fluida
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
     `;
 }

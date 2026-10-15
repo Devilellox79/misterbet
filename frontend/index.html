@@ -118,8 +118,8 @@
     <!-- IL NOSTRO CERVELLO JAVASCRIPT -->
     <script src="app.js"></script>
 
-    <!-- DISCLAIMER LEGALE -->
-    <div class="fixed bottom-0 left-0 right-0 bg-gray-900/95 backdrop-blur-md border-t border-gray-800 p-3 z-50">
+        <!-- DISCLAIMER LEGALE (z-40 per stare sotto il pulsante) -->
+    <div class="fixed bottom-0 left-0 right-0 bg-gray-900/95 backdrop-blur-md border-t border-gray-800 p-3 z-40">
         <div class="max-w-3xl mx-auto text-center">
             <p class="text-[10px] text-gray-500 leading-tight">
                 ⚠️ Il gioco è vietato ai minori di 18 anni e può causare dipendenza patologica. 
@@ -128,8 +128,9 @@
             </p>
         </div>
     </div>
-    <!-- Pulsante "Torna su" -->
-    <button id="scrollToTopBtn" class="fixed bottom-16 right-4 bg-mrGreen text-white w-12 h-12 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-emerald-600 hover:scale-110 z-40 flex items-center justify-center" aria-label="Torna in cima">
+
+    <!-- Pulsante "Torna su" (z-50 per stare SOPRA il disclaimer) -->
+    <button id="scrollToTopBtn" class="fixed bottom-20 right-4 bg-mrGreen text-white w-12 h-12 rounded-full shadow-2xl opacity-0 invisible transition-all duration-300 hover:bg-emerald-600 hover:scale-110 z-50 flex items-center justify-center cursor-pointer" aria-label="Torna in cima">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
         </svg>

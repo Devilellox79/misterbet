@@ -40,11 +40,39 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('Errore nel caricamento dei dati:', error);
-            document.getElementById('top-matches-container').innerHTML = '<div class="glass-card rounded-xl p-6 text-center text-red-400">Errore nel caricamento. (Vedi istruzione Server Locale)</div>';
+            document.getElementById('top-matches-container').innerHTML = '<div class="glass-card rounded-xl p-6 text-center text-red-400">Errore nel caricamento. Controlla la console.</div>';
         });
+    
+    // === 3. PULSANTE "TORNA SU" (dentro DOMContentLoaded per sicurezza) ===
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    
+    if (scrollToTopBtn) {
+        console.log('✅ Pulsante Torna Su trovato!');
+        
+        // Mostra/nasconde il pulsante in base allo scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 150) {
+                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'invisible');
+                scrollToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        // Quando clicca, torna su con animazione fluida
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    } else {
+        console.warn('⚠️ Pulsante Torna Su NON trovato nel DOM');
+    }
 });
 
-// === 3. FUNZIONE CHE CREA L'HTML DI UNA CARD ===
+// === 4. FUNZIONE CHE CREA L'HTML DI UNA CARD ===
 function createCardHTML(match) {
     // Logica del Semaforo: Verde se il gap è alto (>= 5%), Giallo se moderato
     let trafficColor = 'bg-mrGreen';
@@ -64,10 +92,9 @@ function createCardHTML(match) {
     let timeOnly = 'Oggi';
     try {
         if (match.time) {
-            // Formato atteso: "2026-10-15T20:45:00Z" o simile
             const timePart = match.time.split('T')[1];
             if (timePart) {
-                timeOnly = timePart.substring(0, 5); // Prende solo "20:45"
+                timeOnly = timePart.substring(0, 5);
             }
         }
     } catch (e) {
@@ -92,7 +119,6 @@ function createCardHTML(match) {
         <!-- Il Semaforo e la Giocata -->
         <div class="flex items-center justify-between bg-gray-800/50 rounded-lg p-3 mb-4 border border-gray-700/50">
             <div class="flex items-center gap-3">
-                <!-- Pallino Semaforo -->
                 <div class="w-4 h-4 rounded-full ${trafficColor} ${glowEffect}"></div>
                 <div>
                     <p class="text-[10px] text-gray-400 uppercase tracking-wide">Segno Consigliato</p>
@@ -105,7 +131,7 @@ function createCardHTML(match) {
             </div>
         </div>
 
-        <!-- Dettagli Esperto (Probabilità a confronto) -->
+        <!-- Dettagli Esperto -->
         <div class="grid grid-cols-2 gap-4 mb-4 text-sm">
             <div class="bg-gray-900/50 p-2 rounded text-center border border-gray-700/30">
                 <p class="text-gray-500 text-[10px] uppercase mb-1">Nostro Modello</p>
@@ -117,7 +143,7 @@ function createCardHTML(match) {
             </div>
         </div>
 
-        <!-- Barra Affidabilità Cluster (Comparazioni Affini) -->
+        <!-- Barra Affidabilità Cluster -->
         <div>
             <div class="flex justify-between text-xs text-gray-400 mb-1.5">
                 <span>Affidabilità Storica <span class="text-gray-600">(${match.cluster?.total_matches || 0} partite simili)</span></span>
@@ -130,27 +156,3 @@ function createCardHTML(match) {
     </div>
     `;
 }
-
-// === 4. PULSANTE "TORNA SU" (NUOVO - ALLA FINE DEL FILE) ===
-const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-// Mostra/nasconde il pulsante in base allo scroll
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        // L'utente ha scrollato più di 300px: mostra il pulsante
-        scrollToTopBtn.classList.remove('opacity-0', 'invisible');
-        scrollToTopBtn.classList.add('opacity-100', 'visible');
-    } else {
-        // L'utente è in cima: nascondi il pulsante
-        scrollToTopBtn.classList.add('opacity-0', 'invisible');
-        scrollToTopBtn.classList.remove('opacity-100', 'visible');
-    }
-});
-
-// Quando clicca, torna su con animazione fluida
-scrollToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});

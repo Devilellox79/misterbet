@@ -28,6 +28,9 @@ echo.
 
 echo [4/5] Copia file nel frontend...
 copy backend\data\app_data.json frontend\app_data.json
+
+echo [4b/5] Generazione timestamp aggiornamento...
+echo %date% %time% > frontend\update_time.txt
 echo.
 
 echo [5/5] Caricamento su GitHub...

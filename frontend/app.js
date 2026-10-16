@@ -8,32 +8,32 @@ if ('serviceWorker' in navigator) {
 
 // === 2. CARICA E DISEGNA LE PARTITE ===
 document.addEventListener('DOMContentLoaded', () => {
+    
+    // 🕒 Funzione per aggiornare il timestamp
+    function updateTimestamp() {
+        fetch('update_time.txt?t=' + new Date().getTime())
+            .then(response => response.text())
+            .then(text => {
+                const updateTextElement = document.getElementById('last-update-text');
+                if (updateTextElement && text.trim()) {
+                    // Il file contiene qualcosa tipo "16/10/2026  9:15:23,45"
+                    const rawDate = text.trim();
+                    updateTextElement.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-mrGreen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                        <span>Dati aggiornati il: ${rawDate}</span>
+                    `;
+                }
+            })
+            .catch(err => {
+                console.warn('Impossibile leggere update_time.txt:', err);
+            });
+    }
+
     // 1. Scarica i dati dal file JSON
-    fetch('app_data.json')
-        .then(response => {
-            // 🕒 LEGGI LA DATA DI ULTIMA MODIFICA DAL SERVER (NETLIFY)
-            const lastModified = response.headers.get('last-modified');
-            const updateTextElement = document.getElementById('last-update-text');
-            
-            if (lastModified && updateTextElement) {
-                const date = new Date(lastModified);
-                const formattedDate = date.toLocaleString('it-IT', { 
-                    day: '2-digit', 
-                    month: '2-digit', 
-                    year: 'numeric', 
-                    hour: '2-digit', 
-                    minute: '2-digit' 
-                });
-                updateTextElement.innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-mrGreen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
-                    <span>Dati aggiornati il: ${formattedDate}</span>
-                `;
-            }
-            
-            return response.json();
-        })
+    fetch('app_data.json?t=' + new Date().getTime())
+        .then(response => response.json())
         .then(matches => {
             const topContainer = document.getElementById('top-matches-container');
             const allContainer = document.getElementById('all-matches-container');
@@ -59,6 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Errore nel caricamento dei dati:', error);
             document.getElementById('top-matches-container').innerHTML = '<div class="glass-card rounded-xl p-6 text-center text-red-400">Errore nel caricamento. Controlla la connessione.</div>';
         });
+    
+    // Aggiorna il timestamp
+    updateTimestamp();
     
     // === 3. PULSANTE "TORNA SU" ===
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');

@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # ← QUESTA RIGA È LA CHIAVE! Dà i permessi di scrittura
+  contents: write
 
 jobs:
   update-data:
@@ -14,12 +14,13 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # ← Aggiornato a v4
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5  # ← Aggiornato a v5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
@@ -44,8 +45,10 @@ jobs:
           git config --global user.name 'MisterBet Bot'
           git config --global user.email 'bot@misterbet.com'
           git add frontend/app_data.json
-          git diff --quiet && git diff --staged --quiet || (
+          if ! git diff --staged --quiet; then
             git commit -m "Aggiornamento automatico dati giornaliero"
             git pull --rebase origin main
             git push origin main
-          )
+          else
+            echo "Nessun cambiamento da committare"
+          fi

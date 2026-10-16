@@ -44,4 +44,8 @@ jobs:
           git config --global user.name 'MisterBet Bot'
           git config --global user.email 'bot@misterbet.com'
           git add frontend/app_data.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Aggiornamento automatico dati giornaliero" && git push)
+          git diff --quiet && git diff --staged --quiet || (
+            git commit -m "Aggiornamento automatico dati giornaliero"
+            git pull --rebase origin main
+            git push origin main
+          )

@@ -71,9 +71,22 @@
                 </svg>
                 <h1 class="text-xl font-bold tracking-tight">Mister<span class="text-mrGreen">Bet</span></h1>
             </div>
-          
+            <!-- Pulsante Guida -->
+            <button id="helpBtn" class="w-9 h-9 rounded-full bg-gray-800 border border-gray-700 flex items-center justify-center text-white font-bold hover:bg-gray-700 transition-colors" aria-label="Guida">
+                ?
+            </button>
         </div>
     </header>
+
+    <!-- TIMESTAMP AGGIORNAMENTO -->
+    <div class="bg-gray-900/50 border-b border-gray-800 py-2">
+        <p id="last-update-text" class="text-center text-xs text-gray-400 font-medium flex items-center justify-center gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-mrGreen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+            <span>Caricamento data aggiornamento...</span>
+        </p>
+    </div>
 
     <!-- CONTENUTO PRINCIPALE -->
     <main class="max-w-3xl mx-auto px-4 py-6 space-y-8">
@@ -87,7 +100,6 @@
             
             <!-- Qui il JavaScript inserirà le card delle Top 3 partite -->
             <div id="top-matches-container" class="space-y-4">
-                <!-- Loading state -->
                 <div class="glass-card rounded-xl p-6 text-center text-gray-400">
                     Caricamento analisi in corso...
                 </div>
@@ -118,7 +130,7 @@
     <!-- IL NOSTRO CERVELLO JAVASCRIPT -->
     <script src="app.js"></script>
 
-        <!-- DISCLAIMER LEGALE (z-40 per stare sotto il pulsante) -->
+    <!-- DISCLAIMER LEGALE (z-40 per stare sotto il pulsante) -->
     <div class="fixed bottom-0 left-0 right-0 bg-gray-900/95 backdrop-blur-md border-t border-gray-800 p-3 z-40">
         <div class="max-w-3xl mx-auto text-center">
             <p class="text-[10px] text-gray-500 leading-tight">
@@ -135,5 +147,98 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
         </svg>
     </button>
+
+    <!-- MODALE GUIDA -->
+    <div id="helpModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[60] hidden items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-mrCard border border-gray-700 rounded-2xl max-w-lg w-full max-h-[85vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform duration-300" id="helpModalContent">
+            <!-- Header del modale -->
+            <div class="sticky top-0 bg-mrCard border-b border-gray-700 p-4 flex items-center justify-between rounded-t-2xl">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">🎩</span>
+                    <h2 class="text-lg font-bold text-white">Guida a MisterBet</h2>
+                </div>
+                <button id="closeHelpBtn" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-700 transition-colors" aria-label="Chiudi">
+                    ✕
+                </button>
+            </div>
+
+            <!-- Contenuto della guida -->
+            <div class="p-5 space-y-5 text-sm text-gray-300">
+                <div class="bg-gray-800/50 rounded-lg p-4 border border-gray-700/50">
+                    <p class="text-white font-semibold mb-2">Benvenuto in MisterBet! 🎩</p>
+                    <p class="leading-relaxed">Questa app non ti dice "chi vincerà", ma ti mostra <span class="text-mrGreen font-semibold">dove i bookmaker stanno sbagliando le quote</span>, permettendoti di fare scommesse di valore nel lungo periodo.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-2 flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-full bg-mrGreen inline-block"></span>
+                        Il Semaforo e il "Segno Consigliato"
+                    </h3>
+                    <p class="leading-relaxed mb-2">Indica l'esito su cui il nostro modello ha trovato il maggior vantaggio matematico.</p>
+                    <ul class="space-y-1 ml-4">
+                        <li>🟢 <span class="text-mrGreen font-semibold">Verde (Valore Forte):</span> Il bookmaker sta sottovalutando molto quella squadra.</li>
+                        <li>🟡 <span class="text-mrYellow font-semibold">Giallo (Valore Moderato):</span> C'è un vantaggio matematico, ma meno marcato.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-2 flex items-center gap-2">
+                        <span class="text-xl">📊</span>
+                        Il "Gap Valore" (Il cuore dell'app)
+                    </h3>
+                    <p class="leading-relaxed mb-2">È la differenza tra la probabilità reale calcolata dal nostro modello e la probabilità implicita nella quota del bookmaker.</p>
+                    <div class="bg-gray-900/70 rounded-lg p-3 border border-gray-700/50">
+                        <p class="text-xs text-gray-400 mb-1">Esempio pratico:</p>
+                        <p class="text-white">Se il nostro modello dice che una squadra ha il <span class="text-mrGreen font-bold">50%</span> di probabilità di vincere, ma il bookmaker la quota a 4.68 (che implica solo il <span class="text-gray-400">21.4%</span>), il Gap è <span class="text-mrGreen font-bold">+28.6%</span>.</p>
+                    </div>
+                    <p class="mt-2 text-mrGreen font-semibold"> Più alto è il Gap, maggiore è il "valore" della scommessa.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-2 flex items-center gap-2">
+                        <span class="text-xl">⚖️</span>
+                        Nostro Modello vs Bookmaker
+                    </h3>
+                    <p class="leading-relaxed mb-2">Confrontiamo due probabilità:</p>
+                    <ul class="space-y-1 ml-4">
+                        <li>• <span class="text-white font-semibold">Nostro Modello:</span> probabilità calcolata dal nostro algoritmo (basato su migliaia di partite storiche).</li>
+                        <li>• <span class="text-gray-400 font-semibold">Bookmaker:</span> probabilità "nascosta" nella quota offerta.</li>
+                    </ul>
+                    <p class="mt-2 text-mrGreen font-semibold">🎯 Regola d'oro: Se il "Nostro Modello" è molto più alto del "Bookmaker", hai trovato una scommessa di valore.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-2 flex items-center gap-2">
+                        <span class="text-xl">📈</span>
+                        Affidabilità Storica (Comparazioni Affini)
+                    </h3>
+                    <p class="leading-relaxed mb-2">Questa barra ti dice: <em>"Nelle ultime migliaia di partite con quote simili a questa, quante volte l'esito favorito si è verificato?"</em></p>
+                    <ul class="space-y-1 ml-4">
+                        <li>• Barra alta (es. 65%): le partite in questa fascia di quota confermano spesso il pronostico.</li>
+                        <li>• Barra a 0%: la quota è così rara che non ci sono abbastanza casi simili nello storico.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-r from-mrGreen/10 to-transparent rounded-lg p-4 border border-mrGreen/30">
+                    <h3 class="text-white font-bold mb-2">🧠 3 Regole d'Oro per giocare</h3>
+                    <ol class="space-y-2 ml-4 list-decimal">
+                        <li><span class="text-white font-semibold">Concentrati sulle "Top Occasioni":</span> le 3 partite con il Gap di Valore più alto della giornata.</li>
+                        <li><span class="text-white font-semibold">Guarda il numero del Gap:</span> un Gap del +28% è molto meglio di un Gap del +3%.</li>
+                        <li><span class="text-white font-semibold">Gestisci il budget:</span> non puntare mai tutto su una singola partita.</li>
+                    </ol>
+                </div>
+
+                <div class="bg-red-900/20 rounded-lg p-4 border border-red-800/50">
+                    <p class="text-red-300 font-semibold mb-2 flex items-center gap-2">
+                        <span>⚠️</span> Gioco Responsabile
+                    </p>
+                    <p class="text-xs leading-relaxed text-gray-300">
+                        MisterBet è uno strumento di analisi statistica, non una garanzia di vincita. Il gioco è vietato ai minori di 18 anni e può causare dipendenza patologica. Gioca solo ciò che puoi permetterti di perdere.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

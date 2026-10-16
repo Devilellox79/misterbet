@@ -1,5 +1,4 @@
 // MisterBet - Motore Frontend
-// Questo script legge i dati, calcola i colori dei semafori e disegna le card.
 
 // === 1. REGISTRA SERVICE WORKER (per PWA) ===
 if ('serviceWorker' in navigator) {
@@ -11,26 +10,44 @@ if ('serviceWorker' in navigator) {
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Scarica i dati dal file JSON
     fetch('app_data.json')
-        .then(response => response.json())
+        .then(response => {
+            // 🕒 LEGGI LA DATA DI ULTIMA MODIFICA DAL SERVER (NETLIFY)
+            const lastModified = response.headers.get('last-modified');
+            const updateTextElement = document.getElementById('last-update-text');
+            
+            if (lastModified && updateTextElement) {
+                const date = new Date(lastModified);
+                const formattedDate = date.toLocaleString('it-IT', { 
+                    day: '2-digit', 
+                    month: '2-digit', 
+                    year: 'numeric', 
+                    hour: '2-digit', 
+                    minute: '2-digit' 
+                });
+                updateTextElement.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-mrGreen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    <span>Dati aggiornati il: ${formattedDate}</span>
+                `;
+            }
+            
+            return response.json();
+        })
         .then(matches => {
             const topContainer = document.getElementById('top-matches-container');
             const allContainer = document.getElementById('all-matches-container');
 
-            // Pulisce i contenitori (rimuove la scritta "Caricamento...")
             topContainer.innerHTML = '';
             allContainer.innerHTML = '';
 
-            // Se non ci sono partite con valore
             if (matches.length === 0) {
                 topContainer.innerHTML = '<div class="glass-card rounded-xl p-6 text-center text-gray-400">Nessuna opportunità di valore trovata oggi. Il modello consiglia di non giocare.</div>';
                 return;
             }
 
-            // 2. Disegna le card
             matches.forEach((match, index) => {
                 const cardHTML = createCardHTML(match);
-                
-                // Le prime 3 vanno nelle "Top Occasioni", le altre in "Altre Partite"
                 if (index < 3) {
                     topContainer.innerHTML += cardHTML;
                 } else {
@@ -40,16 +57,12 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('Errore nel caricamento dei dati:', error);
-            document.getElementById('top-matches-container').innerHTML = '<div class="glass-card rounded-xl p-6 text-center text-red-400">Errore nel caricamento. Controlla la console.</div>';
+            document.getElementById('top-matches-container').innerHTML = '<div class="glass-card rounded-xl p-6 text-center text-red-400">Errore nel caricamento. Controlla la connessione.</div>';
         });
     
-    // === 3. PULSANTE "TORNA SU" (dentro DOMContentLoaded per sicurezza) ===
+    // === 3. PULSANTE "TORNA SU" ===
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-    
     if (scrollToTopBtn) {
-        console.log('✅ Pulsante Torna Su trovato!');
-        
-        // Mostra/nasconde il pulsante in base allo scroll
         window.addEventListener('scroll', () => {
             if (window.scrollY > 150) {
                 scrollToTopBtn.classList.remove('opacity-0', 'invisible');
@@ -60,35 +73,55 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Quando clicca, torna su con animazione fluida
         scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-    } else {
-        console.warn('⚠️ Pulsante Torna Su NON trovato nel DOM');
+    }
+
+    // === 4. MODALE GUIDA ===
+    const helpBtn = document.getElementById('helpBtn');
+    const helpModal = document.getElementById('helpModal');
+    const helpModalContent = document.getElementById('helpModalContent');
+    const closeHelpBtn = document.getElementById('closeHelpBtn');
+
+    if (helpBtn && helpModal && closeHelpBtn) {
+        helpBtn.addEventListener('click', () => {
+            helpModal.classList.remove('hidden');
+            setTimeout(() => {
+                helpModal.classList.remove('opacity-0');
+                helpModalContent.classList.remove('scale-95');
+                helpModalContent.classList.add('scale-100');
+            }, 10);
+        });
+
+        const closeModal = () => {
+            helpModal.classList.add('opacity-0');
+            helpModalContent.classList.remove('scale-100');
+            helpModalContent.classList.add('scale-95');
+            setTimeout(() => {
+                helpModal.classList.add('hidden');
+            }, 300);
+        };
+
+        closeHelpBtn.addEventListener('click', closeModal);
+        helpModal.addEventListener('click', (e) => {
+            if (e.target === helpModal) closeModal();
+        });
     }
 });
 
-// === 4. FUNZIONE CHE CREA L'HTML DI UNA CARD ===
+// === 5. FUNZIONE CHE CREA L'HTML DI UNA CARD ===
 function createCardHTML(match) {
-    // Logica del Semaforo: Verde se il gap è alto (>= 5%), Giallo se moderato
     let trafficColor = 'bg-mrGreen';
-    let trafficText = 'Valore Forte';
     let glowEffect = 'shadow-[0_0_15px_rgba(16,185,129,0.5)]';
     
     if (match.value_gap < 5) {
         trafficColor = 'bg-mrYellow';
-        trafficText = 'Valore Moderato';
         glowEffect = 'shadow-[0_0_15px_rgba(245,158,11,0.5)]';
     }
 
-    // Larghezza della barra di affidabilità
     const barWidth = Math.min(match.cluster.hit_rate, 100);
 
-    // Estraiamo solo l'ora dalla data (con controllo errori)
     let timeOnly = 'Oggi';
     try {
         if (match.time) {
@@ -103,20 +136,17 @@ function createCardHTML(match) {
 
     return `
     <div class="glass-card rounded-xl p-5 transition-transform hover:scale-[1.02] duration-300">
-        <!-- Header: Lega e Ora -->
         <div class="flex justify-between items-center mb-3 text-xs text-gray-400 font-semibold uppercase tracking-wider">
             <span>${match.league || 'Campionato'}</span>
             <span class="bg-gray-800 px-2 py-1 rounded text-white">${timeOnly}</span>
         </div>
 
-        <!-- Squadre -->
         <div class="flex justify-between items-center mb-4">
             <h3 class="text-lg font-bold text-white">${match.home_team || 'Squadra Casa'}</h3>
             <span class="text-gray-500 text-sm font-bold">VS</span>
             <h3 class="text-lg font-bold text-white">${match.away_team || 'Squadra Trasferta'}</h3>
         </div>
 
-        <!-- Il Semaforo e la Giocata -->
         <div class="flex items-center justify-between bg-gray-800/50 rounded-lg p-3 mb-4 border border-gray-700/50">
             <div class="flex items-center gap-3">
                 <div class="w-4 h-4 rounded-full ${trafficColor} ${glowEffect}"></div>
@@ -131,7 +161,6 @@ function createCardHTML(match) {
             </div>
         </div>
 
-        <!-- Dettagli Esperto -->
         <div class="grid grid-cols-2 gap-4 mb-4 text-sm">
             <div class="bg-gray-900/50 p-2 rounded text-center border border-gray-700/30">
                 <p class="text-gray-500 text-[10px] uppercase mb-1">Nostro Modello</p>
@@ -143,7 +172,6 @@ function createCardHTML(match) {
             </div>
         </div>
 
-        <!-- Barra Affidabilità Cluster -->
         <div>
             <div class="flex justify-between text-xs text-gray-400 mb-1.5">
                 <span>Affidabilità Storica <span class="text-gray-600">(${match.cluster?.total_matches || 0} partite simili)</span></span>

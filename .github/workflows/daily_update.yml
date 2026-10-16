@@ -47,7 +47,7 @@ jobs:
           git add frontend/app_data.json
           if ! git diff --staged --quiet; then
             git commit -m "Aggiornamento automatico dati giornaliero"
-            git pull --rebase origin main
+            git pull --rebase origin main --autostash
             git push origin main
           else
             echo "Nessun cambiamento da committare"

@@ -6,9 +6,9 @@
         "time": "2026-10-17 13:00:00Z",
         "best_bet": "1",
         "model_prob": 50.0,
-        "bookmaker_prob": 21.4,
-        "value_gap": 28.6,
-        "bookmaker_odd": 4.68,
+        "bookmaker_prob": 21.5,
+        "value_gap": 28.5,
+        "bookmaker_odd": 4.66,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -23,8 +23,8 @@
         "best_bet": "1",
         "model_prob": 40.4,
         "bookmaker_prob": 12.6,
-        "value_gap": 27.8,
-        "bookmaker_odd": 7.92,
+        "value_gap": 27.7,
+        "bookmaker_odd": 7.91,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -38,9 +38,9 @@
         "time": "2026-10-18 19:00:00Z",
         "best_bet": "2",
         "model_prob": 31.2,
-        "bookmaker_prob": 9.3,
-        "value_gap": 21.9,
-        "bookmaker_odd": 10.73,
+        "bookmaker_prob": 8.7,
+        "value_gap": 22.5,
+        "bookmaker_odd": 11.5,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -54,9 +54,9 @@
         "time": "2026-10-17 16:30:00Z",
         "best_bet": "2",
         "model_prob": 27.6,
-        "bookmaker_prob": 10.0,
-        "value_gap": 17.6,
-        "bookmaker_odd": 10.0,
+        "bookmaker_prob": 9.9,
+        "value_gap": 17.7,
+        "bookmaker_odd": 10.15,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -70,9 +70,9 @@
         "time": "2026-10-18 15:15:00Z",
         "best_bet": "X",
         "model_prob": 45.2,
-        "bookmaker_prob": 29.2,
-        "value_gap": 16.1,
-        "bookmaker_odd": 3.43,
+        "bookmaker_prob": 29.0,
+        "value_gap": 16.3,
+        "bookmaker_odd": 3.45,
         "cluster": {
             "band": "Sfavorita",
             "hit_rate": 38.86,
@@ -96,19 +96,19 @@
         }
     },
     {
-        "league": "Italy Serie A",
-        "home_team": "Frosinone",
-        "away_team": "Sassuolo",
-        "time": "2026-10-16 18:45:00Z",
-        "best_bet": "1",
-        "model_prob": 52.6,
-        "bookmaker_prob": 38.3,
+        "league": "Spain La Liga",
+        "home_team": "Barcelona",
+        "away_team": "Real Madrid",
+        "time": "2026-10-25 20:00:00Z",
+        "best_bet": "2",
+        "model_prob": 32.9,
+        "bookmaker_prob": 18.6,
         "value_gap": 14.3,
-        "bookmaker_odd": 2.61,
+        "bookmaker_odd": 5.38,
         "cluster": {
-            "band": "Sfavorita",
-            "hit_rate": 38.86,
-            "total_matches": 3219
+            "band": "Fuori Fascia",
+            "hit_rate": 0,
+            "total_matches": 0
         }
     },
     {
@@ -134,45 +134,13 @@
         "time": "2026-10-18 18:45:00Z",
         "best_bet": "2",
         "model_prob": 32.1,
-        "bookmaker_prob": 18.7,
-        "value_gap": 13.4,
-        "bookmaker_odd": 5.34,
-        "cluster": {
-            "band": "Fuori Fascia",
-            "hit_rate": 0,
-            "total_matches": 0
-        }
-    },
-    {
-        "league": "Spain La Liga",
-        "home_team": "Barcelona",
-        "away_team": "Real Madrid",
-        "time": "2026-10-25 20:00:00Z",
-        "best_bet": "2",
-        "model_prob": 32.9,
-        "bookmaker_prob": 19.7,
+        "bookmaker_prob": 18.9,
         "value_gap": 13.2,
-        "bookmaker_odd": 5.08,
+        "bookmaker_odd": 5.3,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
             "total_matches": 0
-        }
-    },
-    {
-        "league": "Italy Serie A",
-        "home_team": "Cagliari",
-        "away_team": "Bologna",
-        "time": "2026-10-24 13:00:00Z",
-        "best_bet": "1",
-        "model_prob": 42.1,
-        "bookmaker_prob": 30.4,
-        "value_gap": 11.7,
-        "bookmaker_odd": 3.29,
-        "cluster": {
-            "band": "Sfavorita",
-            "hit_rate": 38.86,
-            "total_matches": 3219
         }
     },
     {
@@ -189,6 +157,22 @@
             "band": "Fuori Fascia",
             "hit_rate": 0,
             "total_matches": 0
+        }
+    },
+    {
+        "league": "Italy Serie A",
+        "home_team": "Cagliari",
+        "away_team": "Bologna",
+        "time": "2026-10-24 13:00:00Z",
+        "best_bet": "1",
+        "model_prob": 42.1,
+        "bookmaker_prob": 31.1,
+        "value_gap": 11.1,
+        "bookmaker_odd": 3.22,
+        "cluster": {
+            "band": "Sfavorita",
+            "hit_rate": 38.86,
+            "total_matches": 3219
         }
     },
     {
@@ -221,6 +205,22 @@
             "band": "Sfavorita",
             "hit_rate": 38.86,
             "total_matches": 3219
+        }
+    },
+    {
+        "league": "Italy Serie A",
+        "home_team": "Frosinone",
+        "away_team": "Sassuolo",
+        "time": "2026-10-16 18:45:00Z",
+        "best_bet": "1",
+        "model_prob": 52.6,
+        "bookmaker_prob": 42.2,
+        "value_gap": 10.4,
+        "bookmaker_odd": 2.37,
+        "cluster": {
+            "band": "Equilibrata",
+            "hit_rate": 42.54,
+            "total_matches": 10088
         }
     },
     {
@@ -262,9 +262,9 @@
         "time": "2026-10-18 18:45:00Z",
         "best_bet": "2",
         "model_prob": 30.7,
-        "bookmaker_prob": 20.7,
-        "value_gap": 10.0,
-        "bookmaker_odd": 4.83,
+        "bookmaker_prob": 20.8,
+        "value_gap": 9.9,
+        "bookmaker_odd": 4.81,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -342,9 +342,9 @@
         "time": "2026-10-19 16:30:00Z",
         "best_bet": "X",
         "model_prob": 38.0,
-        "bookmaker_prob": 31.0,
-        "value_gap": 7.0,
-        "bookmaker_odd": 3.23,
+        "bookmaker_prob": 31.1,
+        "value_gap": 6.9,
+        "bookmaker_odd": 3.22,
         "cluster": {
             "band": "Sfavorita",
             "hit_rate": 38.86,
@@ -358,9 +358,9 @@
         "time": "2026-10-17 18:45:00Z",
         "best_bet": "2",
         "model_prob": 30.4,
-        "bookmaker_prob": 23.9,
-        "value_gap": 6.5,
-        "bookmaker_odd": 4.19,
+        "bookmaker_prob": 24.8,
+        "value_gap": 5.5,
+        "bookmaker_odd": 4.03,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,

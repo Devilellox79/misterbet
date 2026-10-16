@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAT_TOKEN }}
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -37,12 +37,33 @@ jobs:
       - name: Generate App Data
         run: python backend/services/generate_app_data.py
 
-      - name: Copy data to frontend
-        run: cp backend/data/app_data.json frontend/app_data.json
-
-      - name: Auto Commit and Push
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Aggiornamento automatico dati giornaliero"
-          commit_author: "MisterBet Bot <bot@misterbet.com>"
-          file_pattern: frontend/app_data.json
+      - name: Update file via GitHub API
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          # Codifica il file in base64
+          CONTENT=$(base64 -w 0 frontend/app_data.json)
+          
+          # Ottieni lo SHA del file corrente (necessario per l'update)
+          SHA=$(curl -s -H "Authorization: token $PAT_TOKEN" \
+            "https://api.github.com/repos/$REPO/contents/frontend/app_data.json" \
+            | jq -r '.sha')
+          
+          # Aggiorna il file via API
+          curl -X PUT \
+            -H "Authorization: token $PAT_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/$REPO/contents/frontend/app_data.json \
+            -d "{
+              \"message\": \"Aggiornamento automatico dati giornaliero\",
+              \"content\": \"$CONTENT\",
+              \"sha\": \"$SHA\",
+              \"branch\": \"main\",
+              \"committer\": {
+                \"name\": \"MisterBet Bot\",
+                \"email\": \"bot@misterbet.com\"
+              }
+            }"
+          
+          echo "✅ File aggiornato via API GitHub"

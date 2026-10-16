@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
           fetch-depth: 0
 
       - name: Set up Python
@@ -40,15 +40,9 @@ jobs:
       - name: Copy data to frontend
         run: cp backend/data/app_data.json frontend/app_data.json
 
-      - name: Commit and Push changes
-        run: |
-          git config --global user.name 'MisterBet Bot'
-          git config --global user.email 'bot@misterbet.com'
-          git add frontend/app_data.json
-          if ! git diff --staged --quiet; then
-            git commit -m "Aggiornamento automatico dati giornaliero"
-            git pull --rebase origin main --autostash
-            git push origin main
-          else
-            echo "Nessun cambiamento da committare"
-          fi
+      - name: Auto Commit and Push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Aggiornamento automatico dati giornaliero"
+          commit_author: "MisterBet Bot <bot@misterbet.com>"
+          file_pattern: frontend/app_data.json

@@ -6,9 +6,9 @@
         "time": "2026-10-17 13:00:00Z",
         "best_bet": "1",
         "model_prob": 50.0,
-        "bookmaker_prob": 21.5,
-        "value_gap": 28.5,
-        "bookmaker_odd": 4.66,
+        "bookmaker_prob": 20.8,
+        "value_gap": 29.1,
+        "bookmaker_odd": 4.8,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -38,9 +38,9 @@
         "time": "2026-10-18 19:00:00Z",
         "best_bet": "2",
         "model_prob": 31.2,
-        "bookmaker_prob": 8.7,
-        "value_gap": 22.5,
-        "bookmaker_odd": 11.5,
+        "bookmaker_prob": 9.0,
+        "value_gap": 22.2,
+        "bookmaker_odd": 11.09,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -54,9 +54,9 @@
         "time": "2026-10-17 16:30:00Z",
         "best_bet": "2",
         "model_prob": 27.6,
-        "bookmaker_prob": 9.9,
-        "value_gap": 17.7,
-        "bookmaker_odd": 10.15,
+        "bookmaker_prob": 8.6,
+        "value_gap": 18.9,
+        "bookmaker_odd": 11.6,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -136,7 +136,23 @@
         "model_prob": 32.1,
         "bookmaker_prob": 18.9,
         "value_gap": 13.2,
-        "bookmaker_odd": 5.3,
+        "bookmaker_odd": 5.29,
+        "cluster": {
+            "band": "Fuori Fascia",
+            "hit_rate": 0,
+            "total_matches": 0
+        }
+    },
+    {
+        "league": "France Ligue One",
+        "home_team": "Angers",
+        "away_team": "Marseille",
+        "time": "2026-10-18 13:00:00Z",
+        "best_bet": "1",
+        "model_prob": 40.2,
+        "bookmaker_prob": 28.3,
+        "value_gap": 11.9,
+        "bookmaker_odd": 3.53,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -150,9 +166,9 @@
         "time": "2026-10-18 10:30:00Z",
         "best_bet": "X",
         "model_prob": 39.0,
-        "bookmaker_prob": 27.9,
-        "value_gap": 11.2,
-        "bookmaker_odd": 3.59,
+        "bookmaker_prob": 27.8,
+        "value_gap": 11.3,
+        "bookmaker_odd": 3.6,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -193,62 +209,14 @@
     },
     {
         "league": "France Ligue One",
-        "home_team": "Angers",
-        "away_team": "Marseille",
-        "time": "2026-10-18 13:00:00Z",
-        "best_bet": "1",
-        "model_prob": 40.2,
-        "bookmaker_prob": 29.5,
-        "value_gap": 10.7,
-        "bookmaker_odd": 3.39,
-        "cluster": {
-            "band": "Sfavorita",
-            "hit_rate": 38.86,
-            "total_matches": 3219
-        }
-    },
-    {
-        "league": "Italy Serie A",
-        "home_team": "Frosinone",
-        "away_team": "Sassuolo",
-        "time": "2026-10-16 18:45:00Z",
-        "best_bet": "1",
-        "model_prob": 52.6,
-        "bookmaker_prob": 42.2,
-        "value_gap": 10.4,
-        "bookmaker_odd": 2.37,
-        "cluster": {
-            "band": "Equilibrata",
-            "hit_rate": 42.54,
-            "total_matches": 10088
-        }
-    },
-    {
-        "league": "Epl",
-        "home_team": "Everton",
-        "away_team": "Chelsea",
-        "time": "2026-10-17 11:30:00Z",
-        "best_bet": "1",
-        "model_prob": 44.1,
-        "bookmaker_prob": 33.9,
-        "value_gap": 10.2,
-        "bookmaker_odd": 2.95,
-        "cluster": {
-            "band": "Sfavorita",
-            "hit_rate": 38.86,
-            "total_matches": 3219
-        }
-    },
-    {
-        "league": "France Ligue One",
         "home_team": "Toulouse",
         "away_team": "Troyes",
         "time": "2026-10-24 15:15:00Z",
         "best_bet": "X",
         "model_prob": 37.1,
-        "bookmaker_prob": 27.0,
-        "value_gap": 10.1,
-        "bookmaker_odd": 3.7,
+        "bookmaker_prob": 26.7,
+        "value_gap": 10.4,
+        "bookmaker_odd": 3.75,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -336,15 +304,15 @@
         }
     },
     {
-        "league": "Italy Serie A",
-        "home_team": "Monza",
-        "away_team": "Cagliari",
-        "time": "2026-10-19 16:30:00Z",
-        "best_bet": "X",
-        "model_prob": 38.0,
-        "bookmaker_prob": 31.1,
-        "value_gap": 6.9,
-        "bookmaker_odd": 3.22,
+        "league": "Epl",
+        "home_team": "Everton",
+        "away_team": "Chelsea",
+        "time": "2026-10-17 11:30:00Z",
+        "best_bet": "1",
+        "model_prob": 44.1,
+        "bookmaker_prob": 37.0,
+        "value_gap": 7.0,
+        "bookmaker_odd": 2.7,
         "cluster": {
             "band": "Sfavorita",
             "hit_rate": 38.86,
@@ -352,19 +320,19 @@
         }
     },
     {
-        "league": "France Ligue One",
-        "home_team": "Lille",
-        "away_team": "Brest",
-        "time": "2026-10-17 18:45:00Z",
-        "best_bet": "2",
-        "model_prob": 30.4,
-        "bookmaker_prob": 24.8,
-        "value_gap": 5.5,
-        "bookmaker_odd": 4.03,
+        "league": "Italy Serie A",
+        "home_team": "Monza",
+        "away_team": "Cagliari",
+        "time": "2026-10-19 16:30:00Z",
+        "best_bet": "X",
+        "model_prob": 38.0,
+        "bookmaker_prob": 31.3,
+        "value_gap": 6.7,
+        "bookmaker_odd": 3.19,
         "cluster": {
-            "band": "Fuori Fascia",
-            "hit_rate": 0,
-            "total_matches": 0
+            "band": "Sfavorita",
+            "hit_rate": 38.86,
+            "total_matches": 3219
         }
     },
     {
@@ -377,6 +345,22 @@
         "bookmaker_prob": 15.6,
         "value_gap": 4.5,
         "bookmaker_odd": 6.43,
+        "cluster": {
+            "band": "Fuori Fascia",
+            "hit_rate": 0,
+            "total_matches": 0
+        }
+    },
+    {
+        "league": "France Ligue One",
+        "home_team": "Lille",
+        "away_team": "Brest",
+        "time": "2026-10-17 18:45:00Z",
+        "best_bet": "2",
+        "model_prob": 30.4,
+        "bookmaker_prob": 27.1,
+        "value_gap": 3.3,
+        "bookmaker_odd": 3.69,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,

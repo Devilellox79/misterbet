@@ -1,22 +1,6 @@
 [
     {
         "league": "Italy Serie A",
-        "home_team": "Venezia",
-        "away_team": "Napoli",
-        "time": "2026-10-17 13:00:00Z",
-        "best_bet": "1",
-        "model_prob": 50.0,
-        "bookmaker_prob": 20.8,
-        "value_gap": 29.1,
-        "bookmaker_odd": 4.8,
-        "cluster": {
-            "band": "Fuori Fascia",
-            "hit_rate": 0,
-            "total_matches": 0
-        }
-    },
-    {
-        "league": "Italy Serie A",
         "home_team": "Lecce",
         "away_team": "Juventus",
         "time": "2026-10-25 17:00:00Z",
@@ -38,25 +22,9 @@
         "time": "2026-10-18 19:00:00Z",
         "best_bet": "2",
         "model_prob": 31.2,
-        "bookmaker_prob": 9.0,
-        "value_gap": 22.2,
-        "bookmaker_odd": 11.09,
-        "cluster": {
-            "band": "Fuori Fascia",
-            "hit_rate": 0,
-            "total_matches": 0
-        }
-    },
-    {
-        "league": "Germany Bundesliga",
-        "home_team": "Bayern Munich",
-        "away_team": "RB Leipzig",
-        "time": "2026-10-17 16:30:00Z",
-        "best_bet": "2",
-        "model_prob": 27.6,
-        "bookmaker_prob": 8.6,
-        "value_gap": 18.9,
-        "bookmaker_odd": 11.6,
+        "bookmaker_prob": 8.8,
+        "value_gap": 22.5,
+        "bookmaker_odd": 11.39,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -70,61 +38,13 @@
         "time": "2026-10-18 15:15:00Z",
         "best_bet": "X",
         "model_prob": 45.2,
-        "bookmaker_prob": 29.0,
-        "value_gap": 16.3,
-        "bookmaker_odd": 3.45,
-        "cluster": {
-            "band": "Sfavorita",
-            "hit_rate": 38.86,
-            "total_matches": 3219
-        }
-    },
-    {
-        "league": "Epl",
-        "home_team": "Arsenal",
-        "away_team": "Everton",
-        "time": "2026-10-24 14:00:00Z",
-        "best_bet": "2",
-        "model_prob": 28.7,
-        "bookmaker_prob": 13.8,
-        "value_gap": 14.9,
-        "bookmaker_odd": 7.25,
+        "bookmaker_prob": 28.2,
+        "value_gap": 17.0,
+        "bookmaker_odd": 3.54,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
             "total_matches": 0
-        }
-    },
-    {
-        "league": "Spain La Liga",
-        "home_team": "Barcelona",
-        "away_team": "Real Madrid",
-        "time": "2026-10-25 20:00:00Z",
-        "best_bet": "2",
-        "model_prob": 32.9,
-        "bookmaker_prob": 18.6,
-        "value_gap": 14.3,
-        "bookmaker_odd": 5.38,
-        "cluster": {
-            "band": "Fuori Fascia",
-            "hit_rate": 0,
-            "total_matches": 0
-        }
-    },
-    {
-        "league": "Italy Serie A",
-        "home_team": "Genoa",
-        "away_team": "Venezia",
-        "time": "2026-10-25 14:00:00Z",
-        "best_bet": "X",
-        "model_prob": 45.0,
-        "bookmaker_prob": 31.3,
-        "value_gap": 13.7,
-        "bookmaker_odd": 3.19,
-        "cluster": {
-            "band": "Sfavorita",
-            "hit_rate": 38.86,
-            "total_matches": 3219
         }
     },
     {
@@ -134,9 +54,9 @@
         "time": "2026-10-18 18:45:00Z",
         "best_bet": "2",
         "model_prob": 32.1,
-        "bookmaker_prob": 18.9,
-        "value_gap": 13.2,
-        "bookmaker_odd": 5.29,
+        "bookmaker_prob": 15.9,
+        "value_gap": 16.2,
+        "bookmaker_odd": 6.3,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -150,9 +70,41 @@
         "time": "2026-10-18 13:00:00Z",
         "best_bet": "1",
         "model_prob": 40.2,
-        "bookmaker_prob": 28.3,
-        "value_gap": 11.9,
-        "bookmaker_odd": 3.53,
+        "bookmaker_prob": 24.0,
+        "value_gap": 16.2,
+        "bookmaker_odd": 4.17,
+        "cluster": {
+            "band": "Fuori Fascia",
+            "hit_rate": 0,
+            "total_matches": 0
+        }
+    },
+    {
+        "league": "Epl",
+        "home_team": "Liverpool",
+        "away_team": "Arsenal",
+        "time": "2026-11-01 16:30:00Z",
+        "best_bet": "1",
+        "model_prob": 47.1,
+        "bookmaker_prob": 32.3,
+        "value_gap": 14.8,
+        "bookmaker_odd": 3.1,
+        "cluster": {
+            "band": "Sfavorita",
+            "hit_rate": 38.86,
+            "total_matches": 3219
+        }
+    },
+    {
+        "league": "Epl",
+        "home_team": "Arsenal",
+        "away_team": "Everton",
+        "time": "2026-10-24 14:00:00Z",
+        "best_bet": "2",
+        "model_prob": 28.7,
+        "bookmaker_prob": 14.3,
+        "value_gap": 14.4,
+        "bookmaker_odd": 7.0,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -161,14 +113,30 @@
     },
     {
         "league": "Italy Serie A",
-        "home_team": "Udinese",
-        "away_team": "Lecce",
-        "time": "2026-10-18 10:30:00Z",
+        "home_team": "Genoa",
+        "away_team": "Venezia",
+        "time": "2026-10-25 14:00:00Z",
         "best_bet": "X",
-        "model_prob": 39.0,
-        "bookmaker_prob": 27.8,
-        "value_gap": 11.3,
-        "bookmaker_odd": 3.6,
+        "model_prob": 45.0,
+        "bookmaker_prob": 31.1,
+        "value_gap": 14.0,
+        "bookmaker_odd": 3.22,
+        "cluster": {
+            "band": "Sfavorita",
+            "hit_rate": 38.86,
+            "total_matches": 3219
+        }
+    },
+    {
+        "league": "Spain La Liga",
+        "home_team": "Barcelona",
+        "away_team": "Real Madrid",
+        "time": "2026-10-25 20:00:00Z",
+        "best_bet": "2",
+        "model_prob": 32.9,
+        "bookmaker_prob": 20.0,
+        "value_gap": 12.9,
+        "bookmaker_odd": 5.0,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -214,25 +182,9 @@
         "time": "2026-10-24 15:15:00Z",
         "best_bet": "X",
         "model_prob": 37.1,
-        "bookmaker_prob": 26.7,
-        "value_gap": 10.4,
-        "bookmaker_odd": 3.75,
-        "cluster": {
-            "band": "Fuori Fascia",
-            "hit_rate": 0,
-            "total_matches": 0
-        }
-    },
-    {
-        "league": "France Ligue One",
-        "home_team": "Lyon",
-        "away_team": "Nice",
-        "time": "2026-10-18 18:45:00Z",
-        "best_bet": "2",
-        "model_prob": 30.7,
-        "bookmaker_prob": 20.8,
-        "value_gap": 9.9,
-        "bookmaker_odd": 4.81,
+        "bookmaker_prob": 26.3,
+        "value_gap": 10.8,
+        "bookmaker_odd": 3.8,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -304,22 +256,6 @@
         }
     },
     {
-        "league": "Epl",
-        "home_team": "Everton",
-        "away_team": "Chelsea",
-        "time": "2026-10-17 11:30:00Z",
-        "best_bet": "1",
-        "model_prob": 44.1,
-        "bookmaker_prob": 37.0,
-        "value_gap": 7.0,
-        "bookmaker_odd": 2.7,
-        "cluster": {
-            "band": "Sfavorita",
-            "hit_rate": 38.86,
-            "total_matches": 3219
-        }
-    },
-    {
         "league": "Italy Serie A",
         "home_team": "Monza",
         "away_team": "Cagliari",
@@ -336,15 +272,15 @@
         }
     },
     {
-        "league": "Italy Serie A",
-        "home_team": "Lazio",
-        "away_team": "Parma",
-        "time": "2026-10-24 18:45:00Z",
+        "league": "France Ligue One",
+        "home_team": "Lyon",
+        "away_team": "Nice",
+        "time": "2026-10-18 18:45:00Z",
         "best_bet": "2",
-        "model_prob": 20.0,
-        "bookmaker_prob": 15.6,
-        "value_gap": 4.5,
-        "bookmaker_odd": 6.43,
+        "model_prob": 30.7,
+        "bookmaker_prob": 24.2,
+        "value_gap": 6.6,
+        "bookmaker_odd": 4.14,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -352,15 +288,15 @@
         }
     },
     {
-        "league": "France Ligue One",
-        "home_team": "Lille",
-        "away_team": "Brest",
-        "time": "2026-10-17 18:45:00Z",
+        "league": "Italy Serie A",
+        "home_team": "Lazio",
+        "away_team": "Parma",
+        "time": "2026-10-24 18:45:00Z",
         "best_bet": "2",
-        "model_prob": 30.4,
-        "bookmaker_prob": 27.1,
-        "value_gap": 3.3,
-        "bookmaker_odd": 3.69,
+        "model_prob": 20.0,
+        "bookmaker_prob": 15.5,
+        "value_gap": 4.5,
+        "bookmaker_odd": 6.44,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,

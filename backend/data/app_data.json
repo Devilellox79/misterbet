@@ -6,9 +6,9 @@
         "time": "2026-10-25 17:00:00Z",
         "best_bet": "1",
         "model_prob": 40.4,
-        "bookmaker_prob": 12.4,
-        "value_gap": 27.9,
-        "bookmaker_odd": 8.04,
+        "bookmaker_prob": 12.2,
+        "value_gap": 28.2,
+        "bookmaker_odd": 8.19,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -38,9 +38,9 @@
         "time": "2026-10-28 19:45:00Z",
         "best_bet": "1",
         "model_prob": 46.4,
-        "bookmaker_prob": 23.9,
+        "bookmaker_prob": 24.0,
         "value_gap": 22.5,
-        "bookmaker_odd": 4.18,
+        "bookmaker_odd": 4.17,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -70,13 +70,29 @@
         "time": "2026-10-24 14:00:00Z",
         "best_bet": "2",
         "model_prob": 28.7,
-        "bookmaker_prob": 13.3,
-        "value_gap": 15.4,
-        "bookmaker_odd": 7.5,
+        "bookmaker_prob": 12.9,
+        "value_gap": 15.8,
+        "bookmaker_odd": 7.75,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
             "total_matches": 0
+        }
+    },
+    {
+        "league": "Epl",
+        "home_team": "Liverpool",
+        "away_team": "Arsenal",
+        "time": "2026-11-01 16:30:00Z",
+        "best_bet": "1",
+        "model_prob": 47.1,
+        "bookmaker_prob": 32.3,
+        "value_gap": 14.8,
+        "bookmaker_odd": 3.1,
+        "cluster": {
+            "band": "Sfavorita",
+            "hit_rate": 38.86,
+            "total_matches": 3219
         }
     },
     {
@@ -87,24 +103,8 @@
         "best_bet": "X",
         "model_prob": 45.0,
         "bookmaker_prob": 31.2,
-        "value_gap": 13.8,
-        "bookmaker_odd": 3.2,
-        "cluster": {
-            "band": "Sfavorita",
-            "hit_rate": 38.86,
-            "total_matches": 3219
-        }
-    },
-    {
-        "league": "Epl",
-        "home_team": "Liverpool",
-        "away_team": "Arsenal",
-        "time": "2026-11-01 16:30:00Z",
-        "best_bet": "1",
-        "model_prob": 47.1,
-        "bookmaker_prob": 33.3,
-        "value_gap": 13.7,
-        "bookmaker_odd": 3.0,
+        "value_gap": 13.9,
+        "bookmaker_odd": 3.21,
         "cluster": {
             "band": "Sfavorita",
             "hit_rate": 38.86,
@@ -166,13 +166,29 @@
         "time": "2026-10-25 16:15:00Z",
         "best_bet": "X",
         "model_prob": 32.7,
-        "bookmaker_prob": 21.7,
-        "value_gap": 11.0,
-        "bookmaker_odd": 4.6,
+        "bookmaker_prob": 21.3,
+        "value_gap": 11.5,
+        "bookmaker_odd": 4.7,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
             "total_matches": 0
+        }
+    },
+    {
+        "league": "Spain La Liga",
+        "home_team": "Valencia",
+        "away_team": "Villarreal",
+        "time": "2026-10-24 16:30:00Z",
+        "best_bet": "1",
+        "model_prob": 43.9,
+        "bookmaker_prob": 32.8,
+        "value_gap": 11.1,
+        "bookmaker_odd": 3.05,
+        "cluster": {
+            "band": "Sfavorita",
+            "hit_rate": 38.86,
+            "total_matches": 3219
         }
     },
     {
@@ -208,22 +224,6 @@
         }
     },
     {
-        "league": "Spain La Liga",
-        "home_team": "Valencia",
-        "away_team": "Villarreal",
-        "time": "2026-10-24 16:30:00Z",
-        "best_bet": "1",
-        "model_prob": 43.9,
-        "bookmaker_prob": 33.3,
-        "value_gap": 10.5,
-        "bookmaker_odd": 3.0,
-        "cluster": {
-            "band": "Sfavorita",
-            "hit_rate": 38.86,
-            "total_matches": 3219
-        }
-    },
-    {
         "league": "France Ligue One",
         "home_team": "Angers",
         "away_team": "Lorient",
@@ -240,31 +240,15 @@
         }
     },
     {
-        "league": "Italy Serie A",
-        "home_team": "Torino",
-        "away_team": "Monza",
-        "time": "2026-10-23 18:45:00Z",
-        "best_bet": "X",
-        "model_prob": 36.9,
-        "bookmaker_prob": 28.4,
-        "value_gap": 8.5,
-        "bookmaker_odd": 3.52,
-        "cluster": {
-            "band": "Fuori Fascia",
-            "hit_rate": 0,
-            "total_matches": 0
-        }
-    },
-    {
         "league": "Germany Bundesliga",
         "home_team": "Augsburg",
         "away_team": "Union Berlin",
         "time": "2026-10-24 13:30:00Z",
         "best_bet": "X",
         "model_prob": 32.6,
-        "bookmaker_prob": 24.1,
+        "bookmaker_prob": 24.2,
         "value_gap": 8.5,
-        "bookmaker_odd": 4.15,
+        "bookmaker_odd": 4.14,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -273,14 +257,14 @@
     },
     {
         "league": "Italy Serie A",
-        "home_team": "Monza",
-        "away_team": "Cagliari",
-        "time": "2026-10-19 16:30:00Z",
+        "home_team": "Torino",
+        "away_team": "Monza",
+        "time": "2026-10-23 18:45:00Z",
         "best_bet": "X",
-        "model_prob": 38.0,
-        "bookmaker_prob": 30.3,
-        "value_gap": 7.7,
-        "bookmaker_odd": 3.3,
+        "model_prob": 36.9,
+        "bookmaker_prob": 29.1,
+        "value_gap": 7.9,
+        "bookmaker_odd": 3.44,
         "cluster": {
             "band": "Sfavorita",
             "hit_rate": 38.86,
@@ -294,9 +278,9 @@
         "time": "2026-10-24 18:45:00Z",
         "best_bet": "2",
         "model_prob": 20.0,
-        "bookmaker_prob": 13.7,
-        "value_gap": 6.3,
-        "bookmaker_odd": 7.28,
+        "bookmaker_prob": 13.1,
+        "value_gap": 6.9,
+        "bookmaker_odd": 7.62,
         "cluster": {
             "band": "Fuori Fascia",
             "hit_rate": 0,
@@ -336,22 +320,6 @@
         }
     },
     {
-        "league": "Epl",
-        "home_team": "Aston Villa",
-        "away_team": "Fulham",
-        "time": "2026-10-31 20:00:00Z",
-        "best_bet": "X",
-        "model_prob": 29.9,
-        "bookmaker_prob": 25.6,
-        "value_gap": 4.3,
-        "bookmaker_odd": 3.91,
-        "cluster": {
-            "band": "Fuori Fascia",
-            "hit_rate": 0,
-            "total_matches": 0
-        }
-    },
-    {
         "league": "Italy Serie A",
         "home_team": "Parma",
         "away_team": "Udinese",
@@ -381,6 +349,22 @@
             "band": "Sfavorita",
             "hit_rate": 38.86,
             "total_matches": 3219
+        }
+    },
+    {
+        "league": "Epl",
+        "home_team": "Aston Villa",
+        "away_team": "Fulham",
+        "time": "2026-10-31 20:00:00Z",
+        "best_bet": "X",
+        "model_prob": 29.9,
+        "bookmaker_prob": 26.3,
+        "value_gap": 3.5,
+        "bookmaker_odd": 3.8,
+        "cluster": {
+            "band": "Fuori Fascia",
+            "hit_rate": 0,
+            "total_matches": 0
         }
     }
 ]
